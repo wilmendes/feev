@@ -44,6 +44,9 @@ void insertEnd(Node* first, Cliente client){
     novo->cliente = client;
     novo->proximo = NULL;
 }
+int isEmpty(Node* lst){
+    return (lst == NULL);
+}
 void printList(Node* first){
     Node* iter;
     for(iter = first; iter!= NULL; iter = iter->proximo){
